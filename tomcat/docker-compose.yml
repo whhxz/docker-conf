@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    image: tomcatweb
+    ports:
+      - "8080:8080"
+    volumes:
+      - /home/xxx/Documents/dockerstd/webroot/:/home/xxx/webroot
+      - /home/xxx/Documents/dockerstd/logs/:/usr/local/share/tomcat9/logs
+      - /home/xxx/Documents/dockerstd/ROOT.xml:/usr/local/share/tomcat9/conf/Catalina/localhost/ROOT.xml
